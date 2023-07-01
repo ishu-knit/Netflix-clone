@@ -1,0 +1,45 @@
+.nav{
+
+    /* to stick the nav bar */
+    position: fixed;
+    top:0;
+    padding: 20px;
+
+    /* alone justify-content doesnot work  so mix with width 100% */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+    /* bgcolor */
+    height: 20px;
+
+
+    /* animation  */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav_black{
+    background-color: black;
+
+}
+
+
+
+.nav_logo{
+
+    position: fixed;
+    left: 20px;
+
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav_avtar{
+    position: fixed;
+    right: 20px;
+
+    width: 30px;
+    object-fit: contain;
+}
