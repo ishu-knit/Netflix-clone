@@ -8,11 +8,10 @@ import Nav from "./Nav";
 function App() {
   return (
     <div className="app">
-     {/* <h1 >App </h1> */}
 
      {/* nav */}
-     {/* banner */}
      <Nav/>
+     {/* banner */}
       <Banner/>
      <Rows title="Trending Now"     fetchurl= {requests.fetchtrending}  islarge />
      <Rows title="Top Rated"        fetchurl= {requests.fetchToprated}/>

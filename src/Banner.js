@@ -5,15 +5,11 @@ import "./banner.css"
 
 export default function Banner() {
 
-    // const [bgimg, setBgimg] = useState([]);
     const [movie, setmovie] = useState([]);
     useEffect(() => {
 
-
-
         async function fetchimgdata() {
             const fetchimg = await axios.get('https://api.themoviedb.org/3/discover/movie?with_genres=99&api_key=c9196db42dfa06b95ebd4cd1680a3d19')
-            // const fetchimg = await axios.get('https://api.themoviedb.org/3/discover/tv?sort_by=release_date.asc&with_networks=network_string&first_air_date.gte=2017-05-01&include_null_first_air_dates=true&api_key=c9196db42dfa06b95ebd4cd1680a3d19')
             setmovie(fetchimg.data.results[Math.floor(Math.random() * fetchimg.data.results.length)])
 
         }
