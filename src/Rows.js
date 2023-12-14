@@ -14,16 +14,6 @@ function Rows(props) {
   useEffect(() => {
     function fd() {
 
-      // fetch
-
-      //  fetch('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=c9196db42dfa06b95ebd4cd1680a3d19')
-      //   .then( (x) =>x.json())
-      //   .then((y) =>(setMovies (y.results)))
-
-
-      // axios
-
-      // axios.get("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=c9196db42dfa06b95ebd4cd1680a3d19")
       axios.get(props.fetchurl)
         .then(x => setMovies(x.data.results))
     }
@@ -81,9 +71,7 @@ function Rows(props) {
 
               className='row_poster'
               //previous 
-
-
-
+              
               src={"https://www.themoviedb.org/t/p/w220_and_h330_face/" + e.poster_path}
               // latest
               // src=  {`https://www.themoviedb.org/t/p/w220_and_h330_face/${props.islarge?e.poster_path:e.backdrop_path}`  }
@@ -92,8 +80,6 @@ function Rows(props) {
             />
           )
           )}
-
-
 
         </div>
           {trailerurl && <YouTube videoId={trailerurl} opts={opts} />}

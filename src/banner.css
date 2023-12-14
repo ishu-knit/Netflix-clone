@@ -1,7 +1,8 @@
 .banner{
-    color: aliceblue;
-    object-fit: contain;
-    height: 448px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
 }
 
 .banner_content{

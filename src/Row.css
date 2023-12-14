@@ -1,5 +1,6 @@
 .row{
-    margin:10px
+    margin:10px;
+    margin-bottom: 50px;
 }
 
 
@@ -21,7 +22,7 @@
     object-fit: contain;
     width: 100%;
     margin-right: 10px;
-    max-height: 100px;
+    max-height: 200px;
     transition: transform 450ms;
 }
 

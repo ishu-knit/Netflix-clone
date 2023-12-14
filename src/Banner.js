@@ -30,12 +30,10 @@ function truncate(str,n) {
         <>
             <header className="banner"
                 style={{
-                    backgroundSize: "cover",
+
                     backgroundImage: `Url(
                     https://www.themoviedb.org/t/p/w220_and_h330_face/${movie.backdrop_path}
                 )`,
-                backgroundPosition:"center center",
-              
                 }} >
     
                 <div className="banner_content">
